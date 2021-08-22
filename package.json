@@ -1,7 +1,15 @@
 {
   "name": "deploy-buttons-demo",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
   "author": "jakub.jozwiak <kubencki@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "heroku-postbuild": "yarn install",
+    "start": "cd packages/api && yarn start"
+  }
 }
