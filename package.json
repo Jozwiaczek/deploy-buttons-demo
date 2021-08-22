@@ -1,0 +1,7 @@
+{
+  "name": "deploy-buttons-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "jakub.jozwiak <kubencki@gmail.com>",
+  "license": "MIT"
+}
