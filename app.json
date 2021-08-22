@@ -5,9 +5,11 @@
   "logo": "https://github.com/Jozwiaczek/smart-gate/blob/main/readme-logo.png?raw=true",
   "image": "https://github.com/Jozwiaczek/smart-gate/blob/main/packages/client/public/email-images/sg-logo.png?raw=true",
   "keywords": ["node", "home-automation", "iot", "smart-home", "nestjs", "typescript", "javascript"],
-  "scripts": {
-    "postdeploy": "bundle exec rake bootstrap"
-  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
   "addons": [
     {
       "plan": "heroku-postgresql",
