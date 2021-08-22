@@ -3,7 +3,7 @@
   "description": "API (server) package designed for Smart Gate System",
   "repository": "https://github.com/Jozwiaczek/smart-gate",
   "logo": "https://github.com/Jozwiaczek/smart-gate/blob/main/packages/client/public/email-images/sg-logo.png?raw=true",
-  "image": "https://github.com/Jozwiaczek/smart-gate/blob/main/readme-logo.png?raw=true",
+  "image": "https://github.com/Jozwiaczek/smart-gate/blob/main/packages/client/public/email-images/sg-logo.png?raw=true",
   "keywords": ["node", "home-automation", "iot", "smart-home", "nestjs", "typescript", "javascript"],
   "buildpacks": [
     {
