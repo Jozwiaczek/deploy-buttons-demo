@@ -4,3 +4,9 @@
 
 [build]
     base = "packages/client"
+
+[template.environment]
+    DISABLE_ESLINT_PLUGIN = "true"
+    NETLIFY_USE_YARN = "true"
+    REACT_APP_API_URL = "set the url to your API"
+    REACT_APP_PUSH_NOTIFICATION_PUBLIC_VAPID_KEY = "set the genereted public VAPID key for web push notification"
