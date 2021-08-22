@@ -20,62 +20,17 @@
     }
   ],
   "env": {
-    "SUPER_ADMIN_EMAILS": {
-      "description": "At first point system does not have any registered users. In order to login to your Smart Gate, you have to provide your e-mail to receive invitation email."
-    },
     "ACCESS_SECRET": {
       "description": "A secret key for verifying authentication layer.",
       "generator": "secret"
     },
-    "COOKIE_SECRET": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
-    },
-    "REFRESH_SECRET": {
-      "description": "A secret key for verifying refreshing process of users sessions.",
-      "generator": "secret"
-    },
-    "LOGOUT_SECRET": {
-      "description": "A secret key for verifying logout process.",
-      "generator": "secret"
-    },
-    "DEVICE_TICKET": {
-      "description": "A secret key for verifying the websockets connection.",
-      "generator": "secret"
-    },
-    "PUSH_NOTIFICATION_PRIVATE_VAPID_KEY": {
-      "description": "Push notification PRIVATE Vapid key. (Check Smart Gate documentation for more details)"
-    },
-    "PUSH_NOTIFICATION_PUBLIC_VAPID_KEY": {
-      "description": "Push notification PUBLIC Vapid key. (Check Smart Gate documentation for more details)"
-    },
-    "RATE_LIMIT_MAX_CONCURRENT": {
-      "value": "100"
-    },
-    "RATE_LIMIT_MIN_TIME": {
-      "value": "60"
-    },
-    "INVITATION_EXPIRATION_DATE": {
-      "description": "The amount of time that the invitations are active from the moment they are sent.",
-      "value": "10 days"
-    },
-    "PASSWORD_RESET_TIME": {
-      "description": "The amount of time that user is able to reset his password from the moment that e-mail was sent.",
-      "value": "600"
-    },
-    "SENDGRID_API_KEY": {
-      "description": "Sendgrid API key."
-    },
-    "REPLY_TO": {
-      "description": "Address email for system e-mails."
-    },
-    "SENDER": {
-      "description": "Sender name for system e-mails.",
-      "value": "Smart Gate"
-    },
     "CLIENT_URL": {
       "description": "Address URL of your deployed client(frontend). (Fill after client package deploy)",
       "required": false
+    },
+    "COOKIE_SECRET": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
     },
     "DATABASE_URL": {
       "description": "Address URL of your database. (Fill after deploy)",
@@ -101,6 +56,48 @@
       "description": "Username for your database. (Fill after deploy)",
       "required": false
     },
+    "DEVICE_TICKET": {
+      "description": "A secret key for verifying the websockets connection.",
+      "generator": "secret"
+    },
+    "INVITATION_EXPIRATION_DATE": {
+      "description": "The amount of time that the invitations are active from the moment they are sent.",
+      "value": "10 days"
+    },
+    "LOGOUT_SECRET": {
+      "description": "A secret key for verifying logout process.",
+      "generator": "secret"
+    },
+    "PASSWORD_RESET_TIME": {
+      "description": "The amount of time that user is able to reset his password from the moment that e-mail was sent.",
+      "value": "600"
+    },
+    "PUSH_NOTIFICATION_PRIVATE_VAPID_KEY": {
+      "description": "Push notification PRIVATE Vapid key. (Check Smart Gate documentation for more details)"
+    },
+    "PUSH_NOTIFICATION_PUBLIC_VAPID_KEY": {
+      "description": "Push notification PUBLIC Vapid key. (Check Smart Gate documentation for more details)"
+    },
+    "RATE_LIMIT_MAX_CONCURRENT": {
+      "value": "100"
+    },
+    "RATE_LIMIT_MIN_TIME": {
+      "value": "60"
+    },
+    "REFRESH_SECRET": {
+      "description": "A secret key for verifying refreshing process of users sessions.",
+      "generator": "secret"
+    },
+    "REPLY_TO": {
+      "description": "Address email for system e-mails."
+    },
+    "SENDER": {
+      "description": "Sender name for system e-mails.",
+      "value": "Smart Gate"
+    },
+    "SENDGRID_API_KEY": {
+      "description": "Sendgrid API key."
+    },
     "SENTRY_DEBUG": {
       "description": "Define whether you want to enable Sentry debug mode.",
       "value": "false",
@@ -118,6 +115,9 @@
     "SENTRY_ENVIRONMENT": {
       "required": false,
       "value": "production"
+    },
+    "SUPER_ADMIN_EMAILS": {
+      "description": "At first point system does not have any registered users. In order to login to your Smart Gate, you have to provide your e-mail to receive invitation email."
     }
   }
 }
